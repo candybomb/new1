@@ -29,6 +29,10 @@ html,body{
     
 }
 
+.headerlist .hambuerger{
+    display:none;
+}
+
 .icon img{
     width: 25px;
     height: 25px;
@@ -85,13 +89,19 @@ html,body{
 
 
     .headerlist{
-        
        border:1px solid black;
        width: 100%;
        box-sizing: border-box;
        width: 200px;
-        
+       display: flex;
+       position: relative;
     }
+
+    .headerlist .hamburger{
+        /* position: absolute; */
+
+    }
+
     
     .icon img{
         width: 25px;
@@ -99,8 +109,9 @@ html,body{
     }
     
     .icon{
-        display: inline-block;
+        position: absolute;
         list-style-type: none;
+        
     }
     
     .icon li{
