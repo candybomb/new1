@@ -9,7 +9,7 @@ html,body{
 
 /* -------------------導覽列------------------------ */
 
-header{
+/* header{
     width: 1400px;
     
     display:flex;
@@ -58,12 +58,75 @@ header{
 .headertitle a{
     text-decoration: none;
     color:#B01919;
-}
+} */
+
+
+@media screen and (max-width:414px) {
+
+    header{
+        width: 428px;
+
+        /* display: inline-block; */
+
+        margin: 0 auto;
+
+    }
+
+    .logo{
+        
+        background-image: url(img/logo428.svg);
+    }
+
+    header img{
+        display: none;
+    }
+
+    .headerlist{
+        width:428px;
+        /* margin:40px 30px 25px 30px; */
+        list-style-type: none;
+        
+    }
+    
+    .icon img{
+        width: 25px;
+        height: 25px;
+    }
+    
+    .icon{
+        display: flex;
+        /* justify-content: flex-end; */
+        list-style-type: none;
+    }
+    
+    .icon li{
+        /* padding:0 15px 20px; */
+        
+    }
+    
+    .headertitle{
+        display: flex;
+        /* justify-content: flex-end; */
+        /* font-size:20px; */
+    }
+    
+    .headertitle li{
+        padding:0 10px 20px;
+    }
+    
+    .headertitle a{
+        text-decoration: none;
+        color:#B01919;
+    }
+
+
+    
+  }
 
 
 /* -------------------中間------------------------ */
 
-section{
+/* section{
     width: 1400px;
     margin: 0 auto;
 }
@@ -71,20 +134,27 @@ section{
 section img{
     display: block;
     
+} */
+
+@media screen and (max-width:428px){
+
 }
 
 
 /* -------------------輪播部分------------------------ */
 
-.slide img{
+/* .slide img{
     display: block;
     width: 1400px;
     height: 500px;
     object-fit: cover;
     margin: 0 auto;
     margin-bottom: 80px;
-}
+} */
 
+@media screen and (max-width:428px){
+    
+}
 
 /* -------------------內文部分------------------------ */
 
@@ -151,6 +221,12 @@ section{
     text-decoration: none;
 }
 
+@media screen and (max-width:428px){
+    
+}
+
+
+
 
 /* 第二格 */
 
@@ -214,7 +290,9 @@ section{
     text-decoration: none;
 }
 
-
+@media screen and (max-width:428px){
+    
+}
 
 /* 第三格 */
 
@@ -276,7 +354,9 @@ section{
     text-decoration: none;
 }
 
-
+@media screen and (max-width:428px){
+    
+}
 
 
 /* 第四格 */
@@ -340,6 +420,10 @@ section{
     text-decoration: none;
 }
 
+@media screen and (max-width:428px){
+    
+}
+
 
 /* -------------------品質保證------------------------ */
 
@@ -384,6 +468,11 @@ section{
 .quality li img{
     width: 50px;
     padding-right: 10px;
+    
+}
+
+
+@media screen and (max-width:428px){
     
 }
 
@@ -490,7 +579,9 @@ section .giftpic .pic4 a{
     font-size:25px;
 }
 
-
+@media screen and (max-width:428px){
+    
+}
 
 
 /* -------------------footer------------------------ */
@@ -570,4 +661,10 @@ footer{
 
 .socialicon a{
     padding-left:50px;
+}
+
+
+
+@media screen and (max-width:428px){
+    
 }
