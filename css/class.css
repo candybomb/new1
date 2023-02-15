@@ -18,8 +18,7 @@ header{
     margin: 0 auto;
 }
 
-
-.logo, .logo a{
+.logo{
     width: 100px;
     height: 100px;
     padding: 20px 20px 20px 50px;
@@ -32,7 +31,16 @@ header{
     
 }
 
-.icon img{
+
+.logo414{
+
+    display: none;
+    
+}
+
+
+
+.icon li img{
     width: 25px;
     height: 25px;
 }
@@ -43,15 +51,39 @@ header{
     list-style-type: none;
 }
 
+/* .icon li:first-child{
+    display:none;
+}*/
+
+
+/*.icon li:last-child{
+    display:none;
+} */
+
+
 .icon li{
-    padding:0 15px 20px;
-    
+    padding:0 15px 20px;   
 }
+
+
 
 .headertitle{
     display: flex;
     justify-content: flex-end;
     font-size:20px;
+}
+
+ .headertitle img{
+    display: none;
+}
+
+
+.size414{
+    display: flex;
+}
+
+.headertitle img{
+    opacity: 1;
 }
 
 .headertitle li{
@@ -62,6 +94,130 @@ header{
     text-decoration: none;
     color:#B01919;
 }
+
+.size414 .customer ul{
+    display: none;
+}
+
+@media screen and (max-width:415px){
+
+    header{
+        width: 414px;
+        display:flex;
+        margin: 0 auto 50px auto;
+    }
+    
+    .logo{
+       display: none;
+    }
+    
+    .headerlist{
+        width: 100%;
+        /* margin:40px 10px 25px 30px; */
+        list-style-type: none;
+        position: relative;
+        display: flex;
+    }
+    
+    .headerlist ul{
+        position: absolute;
+        
+    }
+    
+    .headerlist .icon{
+        margin-left: 280px;
+    }
+    
+    
+    
+    
+    .icon li img{
+        width: 25px;
+        height: 25px;
+    }
+    
+    .icon{
+        display: flex;
+        justify-content: flex-end;
+        list-style-type: none;
+        margin-left: -20px;
+    } 
+    
+    .icon li:first-child{
+        display:none;
+    }
+    
+    
+    .icon li:last-child{
+        display:none;
+    }
+    
+    .logo414{
+        display: block;
+        margin-left: 110px;
+        margin-top: -5px;
+        
+    }
+    
+    
+    
+    
+    .headertitle img{
+        display: block;
+    }
+    
+    
+    
+    .headertitle a{
+        text-decoration: none;
+        color:#B01919;
+    } 
+    
+    .size414 {
+        height: 100vw;
+        border:1px solid black;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 150px;
+        top: -40px;
+        left: -190px;
+        transition:1s;
+    }
+    
+    
+    
+    
+    .headertitle .size414 li{
+        
+        padding:20px;
+        border-bottom: 1px solid black;
+    }
+    
+    .customer{
+        position: relative;
+    }
+    
+    .size414 .customer ul{
+        display: block;
+        position: absolute;
+        border: 1px solid black;
+        margin-left: -20px;
+        width: 150px;
+        margin-top: -40px;
+        opacity: 0;
+    }
+    
+    .size414 .customer ul:hover{
+        opacity: 1;
+        margin-left: 130px;
+    
+    }
+    
+    
+    
+    
+    }
 
 
 /* -------------------中間------------------------ */
@@ -75,6 +231,19 @@ section img{
     display: block;
     
 }
+
+@media screen and (max-width:415px){
+
+    section{
+        width: 414px;
+        margin: 0 auto;
+        overflow:hidden;
+        
+        
+    }
+
+}
+
 
 /* -------------------麵包屑------------------------ */
 
@@ -94,6 +263,14 @@ section img{
     text-decoration: none;
     font-size:18px;
 }
+
+@media screen and (max-width:415px){
+
+    .nav{
+     display: none;
+    }
+ 
+ }
 
 
 
@@ -119,7 +296,7 @@ section h1 span{
 
 .title{
     width: calc(100% / 250px);
-    margin: 100px 50px 50px 50px;
+    margin: 100px 30px 50px 30px;
     
 }
 
@@ -159,6 +336,56 @@ section h1 span{
     
 }
 
+@media screen and (max-width:415px){
+
+
+    .title{
+        width: 1000px;
+        margin: 50px 30px 0 30px;
+    }
+    
+    
+    .title li{
+        display: inline-block;
+        
+    }
+    
+    
+    .title li::after{
+        content:"/";
+        font-size:15px;
+    }
+    
+    .title ul li:last-child::after{
+        content:"";
+       font-size: 0;
+       
+    }
+    
+    
+    
+    .title a{
+        font-size:15px;
+        padding-right: 20px;
+        text-decoration: none;
+        color:black;
+    }
+    
+    
+    
+    .title hr{
+        margin: 30px 0;
+        width: 300px;
+        
+    }
+
+    
+ 
+ }
+
+
+
+
 
 /* 內文 */
 
@@ -193,6 +420,55 @@ section h1 span{
 .content td{
     border:1px solid black;
     padding: 10px 0;
+}
+
+
+@media screen and (max-width:415px){
+
+
+    .content{
+        width: 414px;
+    }
+
+
+    .content h1{
+        font-size: 25px;
+        text-align: left;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    
+    
+    .content p{
+        width: 360px;
+        font-size: 1px;
+        line-height: 180%;
+    }
+    
+    .content table{
+        border:1px solid black;
+        width: 360px;
+        margin-top: 20px;
+    }
+    .content th{
+        border:1px solid black;
+        padding: 10px 0;
+        font-size: 12px;
+    }
+    
+    .content tr{
+        border:1px solid black;
+        text-align: center;
+        font-size:12px;
+    
+    }
+    
+    .content td{
+        border:1px solid black;
+        padding: 10px 0;
+    }
+    
+ 
 }
 
 
@@ -273,4 +549,100 @@ footer{
 
 .socialicon a{
     padding-left:50px;
+}
+
+
+
+@media screen and (max-width:415px){
+    
+    footer{
+        margin-top: 50px;
+        width: 100%;
+        background-color: black;
+        color:white;
+        position: relative;
+        /* top: 1360px; */
+        
+        
+    }
+    
+    
+    .contacts {
+        width: 400px;
+        margin-top: 100px;
+        
+      
+    }
+    
+    .contacts h2{
+      font-size:20px;
+    }
+    
+    .contacts .footerp1{
+        width: 380px;
+        font-size: 14px;
+        line-height: 130%;
+    }
+    
+    .contacts .footerp2{
+        width: 340px;
+        font-size: 14px;
+        line-height: 180%;
+    }
+    
+    
+    .footerlist{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        margin:30px 0 30px 20px;
+       
+        
+        
+    }
+    
+    .navtitle{
+        width: 100%;
+        display: flex;
+        padding-bottom: 25px;
+    }
+    
+    .navtitle a{
+        color:white;
+        font-size: 18px;
+        padding-right:10px;
+        text-decoration: none;
+    }
+    
+    .line{
+        border-top:2px solid white;
+        width: 335px;
+        padding-bottom: 35px;
+       
+    }
+    
+    .socialicon{
+        font-size: 10px;
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        top: 70px;
+        left: 190px;
+        
+        
+    }
+
+    .socialicon li img{
+       width: 20px;
+    }
+
+   
+    
+    .socialicon a{
+        padding-left:25px;
+        
+    }
+
+
 }
