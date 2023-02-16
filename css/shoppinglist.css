@@ -18,8 +18,7 @@ header{
     margin: 0 auto;
 }
 
-
-.logo, .logo a{
+.logo{
     width: 100px;
     height: 100px;
     padding: 20px 20px 20px 50px;
@@ -32,7 +31,16 @@ header{
     
 }
 
-.icon img{
+
+.logo414{
+
+    display: none;
+    
+}
+
+
+
+.icon li img{
     width: 25px;
     height: 25px;
 }
@@ -43,15 +51,39 @@ header{
     list-style-type: none;
 }
 
+/* .icon li:first-child{
+    display:none;
+}*/
+
+
+/*.icon li:last-child{
+    display:none;
+} */
+
+
 .icon li{
-    padding:0 15px 20px;
-    
+    padding:0 15px 20px;   
 }
+
+
 
 .headertitle{
     display: flex;
     justify-content: flex-end;
     font-size:20px;
+}
+
+ .headertitle img{
+    display: none;
+}
+
+
+.size414{
+    display: flex;
+}
+
+.headertitle img{
+    opacity: 1;
 }
 
 .headertitle li{
@@ -61,6 +93,132 @@ header{
 .headertitle a{
     text-decoration: none;
     color:#B01919;
+}
+
+.size414 .customer ul{
+    display: none;
+}
+
+
+
+@media screen and (max-width:415px){
+
+header{
+    width: 414px;
+    display:flex;
+    margin: 0 auto 50px auto;
+}
+
+.logo{
+   display: none;
+}
+
+.headerlist{
+    width: 100%;
+    /* margin:40px 10px 25px 30px; */
+    list-style-type: none;
+    position: relative;
+    display: flex;
+}
+
+.headerlist ul{
+    position: absolute;
+    
+}
+
+.headerlist .icon{
+    margin-left: 280px;
+}
+
+
+
+
+.icon li img{
+    width: 25px;
+    height: 25px;
+}
+
+.icon{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin-left: -20px;
+} 
+
+.icon li:first-child{
+    display:none;
+}
+
+
+.icon li:last-child{
+    display:none;
+}
+
+.logo414{
+    display: block;
+    margin-left: 110px;
+    margin-top: -5px;
+    
+}
+
+
+
+
+.headertitle img{
+    display: block;
+}
+
+
+
+.headertitle a{
+    text-decoration: none;
+    color:#B01919;
+} 
+
+.size414 {
+    height: 100vw;
+    border:1px solid black;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 150px;
+    top: -40px;
+    left: -190px;
+    transition:1s;
+}
+
+
+
+
+.headertitle .size414 li{
+    
+    padding:20px;
+    border-bottom: 1px solid black;
+}
+
+.customer{
+    position: relative;
+}
+
+.size414 .customer ul{
+    display: block;
+    position: absolute;
+    border: 1px solid black;
+    margin-left: -20px;
+    width: 150px;
+    margin-top: -40px;
+    opacity: 0;
+}
+
+.size414 .customer ul:hover{
+    opacity: 1;
+    margin-left: 130px;
+
+}
+
+
+
+
 }
 
 
