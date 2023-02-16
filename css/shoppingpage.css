@@ -18,8 +18,7 @@ header{
     margin: 0 auto;
 }
 
-
-.logo, .logo a{
+.logo{
     width: 100px;
     height: 100px;
     padding: 20px 20px 20px 50px;
@@ -32,7 +31,16 @@ header{
     
 }
 
-.icon img{
+
+.logo414{
+
+    display: none;
+    
+}
+
+
+
+.icon li img{
     width: 25px;
     height: 25px;
 }
@@ -43,15 +51,39 @@ header{
     list-style-type: none;
 }
 
+/* .icon li:first-child{
+    display:none;
+}*/
+
+
+/*.icon li:last-child{
+    display:none;
+} */
+
+
 .icon li{
-    padding:0 15px 20px;
-    
+    padding:0 15px 20px;   
 }
+
+
 
 .headertitle{
     display: flex;
     justify-content: flex-end;
     font-size:20px;
+}
+
+ .headertitle img{
+    display: none;
+}
+
+
+.size414{
+    display: flex;
+}
+
+.headertitle img{
+    opacity: 1;
 }
 
 .headertitle li{
@@ -63,12 +95,149 @@ header{
     color:#B01919;
 }
 
+.size414 .customer1 ul{
+    display: none;
+}
+
+
+
+@media screen and (max-width:415px){
+
+header{
+    width: 414px;
+    display:flex;
+    margin: 0 auto 50px auto;
+}
+
+.logo{
+   display: none;
+}
+
+.headerlist{
+    width: 100%;
+    /* margin:40px 10px 25px 30px; */
+    list-style-type: none;
+    position: relative;
+    display: flex;
+}
+
+.headerlist ul{
+    position: absolute;
+    
+}
+
+.headerlist .icon{
+    margin-left: 280px;
+}
+
+
+
+
+.icon li img{
+    width: 25px;
+    height: 25px;
+}
+
+.icon{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin-left: -20px;
+} 
+
+.icon li:first-child{
+    display:none;
+}
+
+
+.icon li:last-child{
+    display:none;
+}
+
+.logo414{
+    display: block;
+    margin-left: 110px;
+    margin-top: -5px;
+    
+}
+
+
+
+
+.headertitle img{
+    display: block;
+}
+
+
+
+.headertitle a{
+    text-decoration: none;
+    color:#B01919;
+} 
+
+.size414 {
+    height: 100vw;
+    border:1px solid black;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 150px;
+    top: -40px;
+    left: -190px;
+    transition:1s;
+}
+
+
+
+
+.headertitle .size414 li{
+    
+    padding:20px;
+    border-bottom: 1px solid black;
+}
+
+.customer1{
+    position: relative;
+}
+
+.size414 .customer1 ul{
+    display: block;
+    position: absolute;
+    border: 1px solid black;
+    margin-left: -20px;
+    width: 150px;
+    margin-top: -40px;
+    opacity: 0;
+}
+
+.size414 .customer1 ul:hover{
+    opacity: 1;
+    margin-left: 130px;
+
+}
+
+
+
+
+}
+
+
 
 /* -------------------中間------------------------ */
 
 section{
     width: 1400px;
     margin: 0 auto;
+}
+
+@media screen and (max-width:415px){
+
+    section{
+        width: 414px;
+        margin: 0 auto;
+        
+    }
+
 }
 
 
@@ -90,6 +259,14 @@ section{
     text-decoration: none;
     font-size:18px;
 }
+
+@media screen and (max-width:415px){
+
+    .nav{
+    margin-left: 50px;
+    }
+ 
+ }
 
 
 
@@ -169,6 +346,15 @@ section .content .sever hr{
     
 }
 
+@media screen and (max-width:415px){
+
+    section .content .sever{
+    display: none;
+   }
+ 
+ }
+
+
 
 /* -------------------右側------------------------ */
 
@@ -240,6 +426,81 @@ section .content .sever hr{
 }
 
 
+@media screen and (max-width:415px){
+
+   
+    .customer{
+        margin: 0 0 50px 30px;
+        
+    }
+    
+    .customer h2{
+        font-size:25px;
+        margin-bottom: 20px;
+    }
+    
+    .customer .list{
+        font-size: 0;
+        display: inline-block;
+    }
+    
+    .customer .list .item{
+        /* border:1px solid black; */
+        /* display: inline-block; */
+        object-fit: contain;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        box-shadow: 5px 5px  2px rgba(0, 0, 0, 0.2);
+        background-color: #F9F8F4;
+    }
+    
+    
+    .customer .list .item img{
+        width: 150px;
+        height: 135px;
+        object-fit: cover;
+        padding-bottom: 20px;
+    }
+    
+    .customer .list .item h3{
+        text-align: center;
+        font-size: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .customer .list .item h4{
+        text-align: center;
+        font-size: 8px;
+        padding-bottom: 15px;
+    }
+    
+    .customer .list .item button{
+        display: block;
+        width: 90px;
+        height: 30px;
+        margin: 0 auto 20px;
+        border:1px solid #9A9A97;
+        background-color: #F9F8F4;
+        
+    }
+    
+    
+    .customer .list .item button a{
+        display: block;
+        text-decoration: none;
+        color:#B01919;
+        
+    }
+    
+    .customer .list .item a{
+        text-decoration: none;
+        color:black;
+    }
+
+
+
+ 
+}
 
 
 
@@ -324,4 +585,97 @@ footer{
 
 .socialicon a{
     padding-left:50px;
+}
+
+
+@media screen and (max-width:415px){
+    
+    footer{
+        width: 100%;
+        background-color: black;
+        color:white;
+        position: relative;
+        
+        
+    }
+    
+    
+    .contacts {
+        width: 400px;
+        margin-top: 100px;
+        
+      
+    }
+    
+    .contacts h2{
+      font-size:20px;
+    }
+    
+    .contacts .footerp1{
+        width: 380px;
+        font-size: 14px;
+        line-height: 130%;
+    }
+    
+    .contacts .footerp2{
+        width: 340px;
+        font-size: 14px;
+        line-height: 180%;
+    }
+    
+    
+    .footerlist{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        margin:30px 0 30px 20px;
+       
+        
+        
+    }
+    
+    .navtitle{
+        width: 100%;
+        display: flex;
+        padding-bottom: 25px;
+    }
+    
+    .navtitle a{
+        color:white;
+        font-size: 18px;
+        padding-right:10px;
+        text-decoration: none;
+    }
+    
+    .line{
+        border-top:2px solid white;
+        width: 335px;
+        padding-bottom: 35px;
+       
+    }
+    
+    .socialicon{
+        font-size: 10px;
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        top: 70px;
+        left: 190px;
+        
+        
+    }
+
+    .socialicon li img{
+       width: 20px;
+    }
+
+   
+    
+    .socialicon a{
+        padding-left:25px;
+        
+    }
+
+
 }
