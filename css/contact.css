@@ -18,8 +18,7 @@ header{
     margin: 0 auto;
 }
 
-
-.logo, .logo a{
+.logo{
     width: 100px;
     height: 100px;
     padding: 20px 20px 20px 50px;
@@ -32,7 +31,16 @@ header{
     
 }
 
-.icon img{
+
+.logo414{
+
+    display: none;
+    
+}
+
+
+
+.icon li img{
     width: 25px;
     height: 25px;
 }
@@ -43,15 +51,39 @@ header{
     list-style-type: none;
 }
 
+/* .icon li:first-child{
+    display:none;
+}*/
+
+
+/*.icon li:last-child{
+    display:none;
+} */
+
+
 .icon li{
-    padding:0 15px 20px;
-    
+    padding:0 15px 20px;   
 }
+
+
 
 .headertitle{
     display: flex;
     justify-content: flex-end;
     font-size:20px;
+}
+
+ .headertitle img{
+    display: none;
+}
+
+
+.size414{
+    display: flex;
+}
+
+.headertitle img{
+    opacity: 1;
 }
 
 .headertitle li{
@@ -63,12 +95,149 @@ header{
     color:#B01919;
 }
 
+.size414 .customer1 ul{
+    display: none;
+}
+
+
+
+@media screen and (max-width:415px){
+
+header{
+    width: 414px;
+    display:flex;
+    margin: 0 auto 50px auto;
+}
+
+.logo{
+   display: none;
+}
+
+.headerlist{
+    width: 100%;
+    /* margin:40px 10px 25px 30px; */
+    list-style-type: none;
+    position: relative;
+    display: flex;
+}
+
+.headerlist ul{
+    position: absolute;
+    
+}
+
+.headerlist .icon{
+    margin-left: 280px;
+}
+
+
+
+
+.icon li img{
+    width: 25px;
+    height: 25px;
+}
+
+.icon{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin-left: -20px;
+} 
+
+.icon li:first-child{
+    display:none;
+}
+
+
+.icon li:last-child{
+    display:none;
+}
+
+.logo414{
+    display: block;
+    margin-left: 110px;
+    margin-top: -5px;
+    
+}
+
+
+
+
+.headertitle img{
+    display: block;
+}
+
+
+
+.headertitle a{
+    text-decoration: none;
+    color:#B01919;
+} 
+
+.size414 {
+    height: 100vw;
+    border:1px solid black;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 150px;
+    top: -40px;
+    left: -190px;
+    transition:1s;
+}
+
+
+
+
+.headertitle .size414 li{
+    
+    padding:20px;
+    border-bottom: 1px solid black;
+}
+
+.customer1{
+    position: relative;
+}
+
+.size414 .customer1 ul{
+    display: block;
+    position: absolute;
+    border: 1px solid black;
+    margin-left: -20px;
+    width: 150px;
+    margin-top: -40px;
+    opacity: 0;
+}
+
+.size414 .customer1 ul:hover{
+    opacity: 1;
+    margin-left: 130px;
+
+}
+
+
+
+
+}
+
+
 
 /* -------------------中間------------------------ */
 
 section{
     width: 1400px;
     margin: 0 auto;
+}
+
+@media screen and (max-width:415px){
+
+    section{
+        width: 414px;
+        margin: 0 auto;
+        
+    }
+
 }
 
 
@@ -90,6 +259,14 @@ section{
     text-decoration: none;
     font-size:18px;
 }
+
+@media screen and (max-width:415px){
+
+    .nav{
+    display: none;
+    }
+ 
+ }
 
 
 
@@ -131,6 +308,25 @@ section .content .sever hr{
 }
 
 
+@media screen and (max-width:415px){
+
+    section .content{
+        display: inline-block;
+        width: 414px;
+    }
+    
+    
+    section .content .sever{
+        margin: 0 0 20px 100px;
+        display: none;
+        
+    }
+    
+    
+ 
+ }
+
+
 /* -------------------右側------------------------ */
 
 .customer{
@@ -140,7 +336,6 @@ section .content .sever hr{
 
 .cu{
     display: flex;
-    padding-left: 5px;
 }
 
 
@@ -174,6 +369,7 @@ section .content .sever hr{
 
 .customer label{
     padding-bottom: 10px;
+
 }
 
 .customer input{
@@ -193,7 +389,9 @@ section .content .sever hr{
     
 }
 
-.customer button{
+
+
+.customer .btn{
     font-size: 15px;
     margin-top: 10px;
     width: 80px;
@@ -201,14 +399,92 @@ section .content .sever hr{
     background-color: #B01919;
     border:1px solid #B01919;
     border-radius: 2px;
-
-}
-
-.customer button a{
-    text-decoration: none;
     color:white;
-    display: block;
+
 }
+
+
+@media screen and (max-width:415px){
+
+
+    .customer{
+        margin: 0 0 ;
+        
+    }
+    
+    .cu{
+        display: inline-block;
+        
+    }
+    
+    
+    .customer .frame1{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .customer h2{
+        font-size: 30px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+        font-weight: bold;
+        
+    }
+    
+    .customer .frame2{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    
+    .customer input,textarea{
+        margin-bottom: 20px;
+        display: block;
+        
+    }
+    
+    .customer label{
+        padding-bottom: 10px;
+        padding-left: 20px;
+    }
+    
+    .customer input{
+        width: 360px;
+        font-size: 18px;
+        padding-top:5px;
+        margin-left: 20px;
+    }
+
+
+    .customer textarea{
+        width: 370px;
+        height: 165px;
+        margin-top: 15px;
+        resize: none;
+        padding: 5px;
+        font-size: 18px;
+        margin-left: 20px;
+        
+    }
+    
+    .customer .btn{
+        font-size: 15px;
+        margin-top: 10px;
+        width: 380px;
+        height: 40px;
+        background-color: #B01919;
+        border:1px solid #B01919;
+        border-radius: 2px;
+        color:white;
+    
+    }
+    
+    
+    
+ 
+ }
 
 
 
@@ -289,4 +565,171 @@ footer{
 
 .socialicon a{
     padding-left:50px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    width: 1400px;
+    background-color: black;
+    color:white;
+    margin:0 auto;
+}
+
+
+.contacts {
+    margin:30px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.contacts h2{
+    font-size:30px;
+    padding-bottom:20px;
+}
+
+.contacts .footerp1{
+    width: 500px;
+    font-size: 18px;
+    line-height: 130%;
+}
+
+.contacts .footerp2{
+    width: 800px;
+    font-size: 18px;
+    line-height: 300%;
+}
+
+
+.footerlist{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin:30px;
+    
+    
+}
+
+.navtitle{
+    display: flex;
+    width: 500px;
+    padding-bottom: 25px;
+}
+
+.navtitle a{
+    color:white;
+    font-size: 20px;
+    padding-right:40px;
+    text-decoration: none;
+}
+
+.line{
+    border-top:2px solid white;
+    width: 460px;
+    padding-bottom: 35px;
+   
+}
+
+.socialicon{
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+    
+}
+
+.socialicon a{
+    padding-left:50px;
+}
+
+@media screen and (max-width:415px){
+    
+    footer{
+        width: 100%;
+        background-color: black;
+        color:white;
+        position: relative;
+        margin-top: 200px;
+        
+    }
+    
+    
+    .contacts {
+        width: 400px;
+        margin-top: 100px;
+        
+      
+    }
+    
+    .contacts h2{
+      font-size:20px;
+    }
+    
+    .contacts .footerp1{
+        width: 380px;
+        font-size: 14px;
+        line-height: 130%;
+    }
+    
+    .contacts .footerp2{
+        width: 340px;
+        font-size: 14px;
+        line-height: 180%;
+    }
+    
+    
+    .footerlist{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        margin:30px 0 30px 20px;
+       
+        
+        
+    }
+    
+    .navtitle{
+        width: 100%;
+        display: flex;
+        padding-bottom: 25px;
+    }
+    
+    .navtitle a{
+        color:white;
+        font-size: 18px;
+        padding-right:10px;
+        text-decoration: none;
+    }
+    
+    .line{
+        border-top:2px solid white;
+        width: 335px;
+        padding-bottom: 35px;
+       
+    }
+    
+    .socialicon{
+        font-size: 10px;
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        top: 70px;
+        left: 190px;
+        
+        
+    }
+
+    .socialicon li img{
+       width: 20px;
+    }
+
+   
+    
+    .socialicon a{
+        padding-left:25px;
+        
+    }
+
+
 }
