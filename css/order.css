@@ -18,8 +18,7 @@ header{
     margin: 0 auto;
 }
 
-
-.logo, .logo a{
+.logo{
     width: 100px;
     height: 100px;
     padding: 20px 20px 20px 50px;
@@ -32,7 +31,16 @@ header{
     
 }
 
-.icon img{
+
+.logo414{
+
+    display: none;
+    
+}
+
+
+
+.icon li img{
     width: 25px;
     height: 25px;
 }
@@ -43,15 +51,39 @@ header{
     list-style-type: none;
 }
 
+/* .icon li:first-child{
+    display:none;
+}*/
+
+
+/*.icon li:last-child{
+    display:none;
+} */
+
+
 .icon li{
-    padding:0 15px 20px;
-    
+    padding:0 15px 20px;   
 }
+
+
 
 .headertitle{
     display: flex;
     justify-content: flex-end;
     font-size:20px;
+}
+
+ .headertitle img{
+    display: none;
+}
+
+
+.size414{
+    display: flex;
+}
+
+.headertitle img{
+    opacity: 1;
 }
 
 .headertitle li{
@@ -63,12 +95,148 @@ header{
     color:#B01919;
 }
 
+.size414 .customer ul{
+    display: none;
+}
+
+
+
+@media screen and (max-width:415px){
+
+header{
+    width: 414px;
+    display:flex;
+    margin: 0 auto 50px auto;
+}
+
+.logo{
+   display: none;
+}
+
+.headerlist{
+    width: 100%;
+    /* margin:40px 10px 25px 30px; */
+    list-style-type: none;
+    position: relative;
+    display: flex;
+}
+
+.headerlist ul{
+    position: absolute;
+    
+}
+
+.headerlist .icon{
+    margin-left: 280px;
+}
+
+
+
+
+.icon li img{
+    width: 25px;
+    height: 25px;
+}
+
+.icon{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin-left: -20px;
+} 
+
+.icon li:first-child{
+    display:none;
+}
+
+
+.icon li:last-child{
+    display:none;
+}
+
+.logo414{
+    display: block;
+    margin-left: 110px;
+    margin-top: -5px;
+    
+}
+
+
+
+
+.headertitle img{
+    display: block;
+}
+
+
+
+.headertitle a{
+    text-decoration: none;
+    color:#B01919;
+} 
+
+.size414 {
+    height: 100vw;
+    border:1px solid black;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 150px;
+    top: -40px;
+    left: -190px;
+    transition:1s;
+}
+
+
+
+
+.headertitle .size414 li{
+    
+    padding:20px;
+    border-bottom: 1px solid black;
+}
+
+.customer{
+    position: relative;
+}
+
+.size414 .customer ul{
+    display: block;
+    position: absolute;
+    border: 1px solid black;
+    margin-left: -20px;
+    width: 150px;
+    margin-top: -40px;
+    opacity: 0;
+}
+
+.size414 .customer ul:hover{
+    opacity: 1;
+    margin-left: 130px;
+
+}
+
+
+
+
+}
+
 
 /* -------------------中間------------------------ */
 
 section{
     width: 1400px;
     margin: 0 auto;
+}
+
+@media screen and (max-width:415px){
+
+    section{
+        width: 414px;
+        margin: 0 auto;
+        
+    }
+
 }
 
 
@@ -90,6 +258,14 @@ section{
     text-decoration: none;
     font-size:18px;
 }
+
+@media screen and (max-width:415px){
+
+    .nav{
+    display: none;
+    }
+ 
+ }
 
 
 
@@ -169,6 +345,92 @@ section .buy2 input:nth-child(2){
     margin-left: -310px;
 }
 
+@media screen and (max-width:415px){
+
+    section .content{
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 10px 20px; 
+    } 
+    
+    section  h2{
+        font-size: 25px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        margin-left:20px; 
+        
+    }
+    
+    section .buy{
+        display: flex;
+        order :-1
+    }
+    
+    
+    
+    
+    section .buy label,.buy1 label,.buy2 label {
+        font-size:20px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    
+    section .buy input{
+        width: 340px;
+        font-size: 18px;
+        padding: 2px;
+    }
+    
+    section .buy1 ,.buy2{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    
+    section .buy1 input,textarea,.buy2 input{
+        font-size: 18px;
+        padding: 2px;
+    }
+
+    section .buy1{
+        order:2;
+    }
+    
+    section .buy1 textarea{
+        resize:none;
+    }
+    
+    section .buy1 input:nth-child(2){
+        width: 340px;
+    }
+    
+    section .buy1 input:nth-child(4){
+        width: 340px;
+    }
+    
+    section .buy1 textarea{
+        width: 340px;
+        height: 160px;
+    }
+
+    section .buy2{
+        order:1;
+    }
+    
+    
+    section .buy2 label{
+        margin-left: 0px;
+        
+    }
+    
+    section .buy2 input:nth-child(2){
+        width: 340px;
+        margin-left: 0px;
+        
+    }
+ 
+ }
+
 
 
 
@@ -212,6 +474,48 @@ section hr{
     
 }
 
+@media screen and (max-width:415px){
+
+    section hr{
+        margin-top: 30px;
+        margin-left: 20px;
+        width: 340px;
+        margin-bottom: 20px;
+        /* margin-top: 20px; */
+        background-color: #9a9a97;
+    
+    }
+    
+    .title{
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    
+    .title ul li{
+        display: inline-block;
+        font-size: 16px;
+
+        
+    }
+    
+    .title ul li:nth-child(1){
+        /* margin-left: -25px; */
+        padding-left: 20px;
+    }
+    
+    .title ul li:nth-child(2){
+        
+        padding-left: 150px;
+    }
+    
+    
+    .title ul li:nth-child(3){
+        padding-left: 80px;
+        
+    }
+ 
+}
+
 
 
 /* 內容物 */
@@ -233,18 +537,22 @@ section hr{
 
 .list ul li:nth-child(1){
     
-    padding-left: 160px;
+    padding-left: 20px;
 }
 
 .list ul li:nth-child(2){
     
-    padding-left: 585px;
+    padding-left: 70px;
 }
 
 
 .list ul li:nth-child(3){
-    padding-left: 200px;
+    padding-left: 50px;
     
+}
+
+@media screen and (max-width:415px){
+ 
 }
 
 
@@ -263,18 +571,25 @@ section hr{
 
 .total ul li:nth-child(1){
     
-    padding-left: 200px;
+    padding-left: 20px;
 }
 
 .total ul li:nth-child(2){
     
-    padding-left: 625px;
+    padding-left: 150px;
 }
 
 .total ul li:nth-child(3){
     
-    padding-left: 200px;
+    padding-left: 50px;
 }
+
+
+@media screen and (max-width:415px){
+ 
+}
+
+
 
 /* 運費 */
 
@@ -306,6 +621,40 @@ section hr{
     margin-bottom: 20px;
 }
 
+
+@media screen and (max-width:415px){
+ 
+    .freight{
+        margin-top: 20px;
+        
+        padding-left: 20px;
+        
+    }
+    
+    .freight .send1{
+        display: flex;
+    }
+    
+    .freight ul li{
+        font-size: 20px;
+        
+    }
+    
+    
+    .freight ul .send2{
+        display: flex;
+        flex-direction: column;
+        padding-left: 80px;
+    }
+    
+    .freight ul .send2 li{
+        margin-bottom: 20px;
+    }
+
+
+}
+
+
 /* 總計 */
 
 .totalpay{
@@ -329,6 +678,33 @@ section hr{
     padding-left: 850px;
 }
 
+@media screen and (max-width:415px){
+
+    .totalpay{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .totalpay ul li{
+        display: inline-block;
+        font-size: 20px;
+        
+    }
+    
+    .totalpay ul li:nth-child(1){
+        
+        padding-left: 20px;
+    }
+    
+    .totalpay ul li:nth-child(2){
+        
+        padding-left: 210px;
+    }
+ 
+}
+
+
+
 /*支付*/
 
 .pay{
@@ -349,11 +725,33 @@ section hr{
 }
 
 
+@media screen and (max-width:415px){
+
+    .pay{
+        width: 354px;
+        margin-left: 20px;
+        border: 1px solid #9a9a97;
+        margin-bottom: 50px;
+        background-color: #f9f8f4;
+    }
+    
+    .pay ul{
+        margin-left: 0px;
+    }
+    
+    .pay ul li{
+        padding: 20px;
+        font-size: 20px;
+    }
+ 
+}
+
+
 
 /* 下訂按鈕 */
 
 
-section button{
+section .orderbtn{
     margin-bottom: 100px;
     display: block;
     margin: 0 auto;
@@ -362,14 +760,31 @@ section button{
     background-color: #b01919;
     border:#B01919 1px solid;
     border-radius: 2px;
-}
-
-section button a{
-    display: block;
+    color:white;
     font-size:20px;
     line-height: 60px;
     text-decoration: none;
-    color:white;
+}
+
+
+@media screen and (max-width:415px){
+
+    section .orderbtn{
+        margin-bottom: 100px;
+        display: block;
+        margin: 0 auto;
+        width: 400px;
+        height: 60px;
+        background-color: #b01919;
+        border:#B01919 1px solid;
+        border-radius: 2px;
+        color:white;
+        font-size:20px;
+        line-height: 60px;
+        text-decoration: none;
+ 
+}
+
 }
 
 
@@ -378,7 +793,7 @@ section button a{
 
 /* -------------------右側------------------------ */
 
-/* .customer{
+.customer{
     margin: 0 0 50px 60px;
     
 }
@@ -454,7 +869,7 @@ section button a{
     color:white;
     display: block;
 }
- */
+
 
 
 /* -------------------footer------------------------ */
@@ -535,4 +950,96 @@ footer{
 
 .socialicon a{
     padding-left:50px;
+}
+
+@media screen and (max-width:415px){
+    
+    footer{
+        width: 100%;
+        background-color: black;
+        color:white;
+        position: relative;
+        margin-top: 200px;
+        
+    }
+    
+    
+    .contacts {
+        width: 400px;
+        margin-top: 100px;
+        
+      
+    }
+    
+    .contacts h2{
+      font-size:20px;
+    }
+    
+    .contacts .footerp1{
+        width: 414px;
+        font-size: 14px;
+        line-height: 130%;
+    }
+    
+    .contacts .footerp2{
+        width: 340px;
+        font-size: 14px;
+        line-height: 180%;
+    }
+    
+    
+    .footerlist{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        margin:30px 0 30px 20px;
+       
+        
+        
+    }
+    
+    .navtitle{
+        width: 100%;
+        display: flex;
+        padding-bottom: 25px;
+    }
+    
+    .navtitle a{
+        color:white;
+        font-size: 18px;
+        padding-right:10px;
+        text-decoration: none;
+    }
+    
+    .line{
+        border-top:2px solid white;
+        width: 335px;
+        padding-bottom: 35px;
+       
+    }
+    
+    .socialicon{
+        font-size: 10px;
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        top: 70px;
+        left: 190px;
+        
+        
+    }
+
+    .socialicon li img{
+       width: 20px;
+    }
+
+   
+    
+    .socialicon a{
+        padding-left:25px;
+        
+    }
+
+
 }
