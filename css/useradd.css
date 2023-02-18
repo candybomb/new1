@@ -337,7 +337,7 @@ header{
 
 
 
-.userframe button {
+.userframe .s1 {
     margin: 20px 0 50px 100px;
     width: 492px;
     font-size: 20px;
@@ -346,23 +346,19 @@ header{
     border:#B01919 solid;
     background-color: #B01919;
     border-radius: 2px;
-}
-
-.userframe button a{
-    display: block;
-    text-decoration: none;
     color:white;
 }
 
+
 .userframe hr{
     width: 492px;
-    margin-bottom: 20px;
-    margin-top: -10px;
+    margin-bottom: 30px;
+    margin-top: -20px;
 }
 
 @media screen and (max-width:415px){
 
-    .userframe button {
+    .userframe .s1 {
         margin: 20px 0 40px 20px;
         width: 315px;
         font-size: 20px;
@@ -371,12 +367,13 @@ header{
         border:#B01919 solid;
         background-color: #B01919;
         border-radius: 2px;
+        color:white;
     }
     
     .userframe button a{
         display: block;
         text-decoration: none;
-        color:white;
+        
     }
     
     .userframe hr{
