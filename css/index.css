@@ -338,13 +338,18 @@ section{
     }
 
     .frame1 img{
-        width: 414px;
+        width: 420px;
         height: 208px;
     }
 
     .frame1p{
         position:static;
-        width: 414px;
+        width: 420px;    
+        background-color: #F9f8f4;
+        border-top:5px solid #B01919;
+        box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.2);
+            
+        
     }
 
     
@@ -440,13 +445,15 @@ section{
     }
     
     .frame2 img{
-        width: 414px;
+        width: 420px;
         height: 208px;
     }
 
     .frame2p{
         position:static;
-        width: 414px;
+        width: 420px;    
+        background-color: #F9f8f4;
+        box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.2);
     }
 
     .frame2p h3{
@@ -538,12 +545,15 @@ section{
     }
 
     .frame3 img{
-        width: 414px;
+        width: 420px;
         height: 208px;
     }
 
     .frame3p{
         position:static;
+        width: 420px;    
+        background-color: #F9f8f4;
+        box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.2);
         width: 414px;
     }
 
@@ -640,13 +650,16 @@ section{
     }
 
     .frame4 img{
-        width: 414px;
+        width: 420px;
         height: 208px;
     }
 
     .frame4p{
         position:static;
-        width: 414px;
+        width: 420px;    
+        background-color: #F9f8f4;
+        box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.2);
+       
     }
 
     .framep4 h3{
