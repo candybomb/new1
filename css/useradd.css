@@ -184,24 +184,25 @@ header{
 } 
 
 .size414 {
-    
-    height: 100vw;
+    padding: 50px;
+    height: 400px;
     /* border:1px solid black; */
     display: flex;
     flex-direction: column;
     position: absolute;
-    width: 150px;
+    width: 180px;
     top: -40px;
-    left: -190px; 
+    left: -500px; 
     background-color: #f9f8f4;
+    z-index: 8;
 
     
 
 }
 
 .sizeopen{
-    transition:3s;
-    left:160px;
+    transition:1s;
+    transform: translateX(470px);
 }
 
 
@@ -210,8 +211,8 @@ header{
 
 
 .headertitle .size414 li{
-    
-    padding:20px;
+    margin-left: -30px;
+    padding-top:20px;
     border-bottom: 1px solid black;
 }
 
@@ -219,8 +220,8 @@ header{
     position: absolute;
     border:solid 1px black;
     display: block;
-    left: 50px;
-    top: 300px;
+    left: 20px;
+    top: 20px;
 }
 
 
@@ -249,6 +250,7 @@ header{
 
 
 }
+
 
 
 /* -------------------麵包屑------------------------ */

@@ -230,7 +230,7 @@ header{
     display: block;
     position: absolute;
     /* border: 1px solid black; */
-    margin-left: -20px;
+    left: 30px;
     width: 150px;
     margin-top: -40px;
     opacity: 0;
@@ -1106,7 +1106,7 @@ footer{
 @media screen and (max-width:415px){
     
     footer{
-        width: 100%;
+        width: 100%px;
         background-color: black;
         color:white;
         position: relative;

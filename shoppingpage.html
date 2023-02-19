@@ -27,7 +27,7 @@
                     <li><a href="story.html">品牌故事</a></li>
                     <li class="shoppinglist"><a href="shoppingpage.html">私房推薦</a>
                     <li><a href="class.html">識茶小教室</a></li>
-                    <li class="customer"><a href="contact.html">顧客服務</a>
+                    <li class="customer1"><a href="contact.html">顧客服務</a>
                         <ul>
                             <li>  <a href="contact.html">與我們聯絡</a></li>
                             <li>  <a href="user.html">會員登入</a></li>
@@ -244,6 +244,32 @@
         
         
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script>
+
+
+
+$(document).ready(function () {
+    $('.ham').click(function (e) {
+        event.preventDefault();
+        $('.headertitle').addClass('sizeopen'); 
+    });
+
+    $('.close').click(function (e) {
+        $('.headertitle').removeClass('size414');
+    });
+
+    
+});
+
+
+
+
+
+
+</script>
 
 
 
