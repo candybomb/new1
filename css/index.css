@@ -71,7 +71,11 @@ header{
     font-size:20px;
 }
 
- .headertitle img{
+ .headerlist .ham{
+    display: none;
+}
+
+.headertitle .size414 .close{
     display: none;
 }
 
@@ -160,11 +164,15 @@ header{
 }
 
 
+.headertitle:hover{
+    margin-right: 100px;
+}
 
-
-.headertitle img{
+.headerlist .ham{
     display: block;
 }
+
+
 
 
 
@@ -174,16 +182,27 @@ header{
 } 
 
 .size414 {
+    
     height: 100vw;
-    border:1px solid black;
+    /* border:1px solid black; */
     display: flex;
     flex-direction: column;
     position: absolute;
     width: 150px;
     top: -40px;
-    left: -190px;
-    transition:1s;
+    left: -190px; 
+    background-color: #f9f8f4;
+
+    
+
 }
+
+.sizeopen{
+    transition:1s;
+    transform: translateX(160px);
+}
+
+
 
 
 
@@ -194,6 +213,15 @@ header{
     border-bottom: 1px solid black;
 }
 
+.headertitle .size414 .close{
+    position: absolute;
+    border:solid 1px black;
+    display: block;
+    left: 50px;
+    top: 300px;
+}
+
+
 .customer{
     position: relative;
 }
@@ -201,11 +229,12 @@ header{
 .size414 .customer ul{
     display: block;
     position: absolute;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-left: -20px;
     width: 150px;
     margin-top: -40px;
     opacity: 0;
+    background-color: #f9f8f4;
 }
 
 .size414 .customer ul:hover{
