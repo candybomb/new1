@@ -589,7 +589,7 @@ footer{
 @media screen and (max-width:415px){
     
     footer{
-        width: 100%;
+        width: 420px;
         margin-top: 50px;
         background-color: black;
         color:white;

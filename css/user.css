@@ -695,7 +695,7 @@ footer{
 @media screen and (max-width:415px){
     
     footer{
-        width: 100%;
+        width: 420px;
         background-color: black;
         color:white;
         position: relative;
